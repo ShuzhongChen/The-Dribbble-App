@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Exhibbbit</string>
+
+    <string name="title_home">Exhibbbit</string>
+    <string name="title_likes">Likes</string>
+    <string name="title_buckets">Buckets</string>
+
+    <string name="drawer_menu_home">Home</string>
+    <string name="drawer_menu_likes">Likes</string>
+    <string name="drawer_menu_buckets">Buckets</string>
+</resources>
