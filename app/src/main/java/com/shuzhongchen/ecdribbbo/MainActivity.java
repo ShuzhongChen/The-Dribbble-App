@@ -100,7 +100,6 @@ public class MainActivity extends AppCompatActivity {
 
                 drawerLayout.closeDrawers();
 
-
                 if (fragment != null) {
                     getSupportFragmentManager()
                             .beginTransaction()
