@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.shuzhongchen.ecdribbbo">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,13 +11,26 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+
+        <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".MainActivity"/>
+
+        <activity
+            android:name=".dribbble.auth.AuthActivity"
+            android:windowSoftInputMode="adjustPan"/>
+        <!--
+         setting android:windowSoftInputMode is to fixed toolbar stretch bug
+         check out: http://stackoverflow.com/questions/28043202/android-appcompat-toolbar-stretches-when-searchview-gets-focus
+         try commenting out android:windowSoftInputMode and open soft keyboard in AuthActivity to see the bug
+        -->
+
+
     </application>
 
 </manifest>
