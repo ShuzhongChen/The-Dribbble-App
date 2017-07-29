@@ -13,6 +13,7 @@
     <string name="logout">Log out</string>
     <string name="save">Save</string>
     <string name="share">Share</string>
+    <string name="user_profile_picture">User profile picture</string>
 
     <string name="open_drawer">open drawer</string>
     <string name="close_drawer">close drawer</string>
@@ -27,4 +28,8 @@
     <string name="shot_image">Shot image</string>
 
     <string name="shot_count">{0,choice,0#0 shot|1#1 shot|1&lt;{0} shots}</string>
+    <string name="auth_activity_title">Log into Exhibbbit</string>
+
+    <string name="activity_login_btn_text">Log into Exhibbbit</string>
+    <string name="activity_login_icon">Exhibbbit icon</string>
 </resources>

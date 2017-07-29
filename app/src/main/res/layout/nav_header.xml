@@ -1,19 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingTop="@dimen/spacing_large"
+    android:layout_height="wrap_content"
+    android:paddingTop="120dp"
     android:paddingBottom="@dimen/spacing_medium"
-    android:paddingLeft="@dimen/spacing_large"
-    android:paddingRight="@dimen/spacing_large">
+    android:paddingLeft="@dimen/spacing_medium"
+    android:paddingRight="@dimen/spacing_medium"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/nav_header_user_picture"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="@dimen/spacing_medium"
+        android:contentDescription="@string/user_profile_picture"
+        tools:src="@drawable/user_picture_placeholder"/>
 
     <TextView
-        android:id="@+id/nav_header_login_btn"
+        android:id="@+id/nav_header_user_name"
+        tools:text="Username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/app_name"
-        style="@style/AppTheme.TextView.Clickable"/>
+        android:layout_alignTop="@id/nav_header_user_picture"
+        android:layout_toRightOf="@id/nav_header_user_picture"
+        style="@style/AppTheme.TextView.2.White"/>
 
-</LinearLayout>
+    <TextView
+        android:id="@+id/nav_header_logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/nav_header_user_picture"
+        android:layout_below="@id/nav_header_user_name"
+        android:layout_marginLeft="@dimen/nav_header_login_btn_margin_left"
+        android:text="@string/logout"
+        style="@style/AppTheme.TextView.Clickable.1.White"/>
+
+</RelativeLayout>
