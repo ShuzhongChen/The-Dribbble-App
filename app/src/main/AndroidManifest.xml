@@ -30,6 +30,7 @@
          try commenting out android:windowSoftInputMode and open soft keyboard in AuthActivity to see the bug
         -->
 
+        <activity android:name=".view.shot_detail.ShotActivity"/>
 
     </application>
 
