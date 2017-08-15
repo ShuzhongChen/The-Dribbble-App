@@ -2,12 +2,15 @@ package com.shuzhongchen.ecdribbbo.view.shot_list;
 
 import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.facebook.drawee.backends.pipeline.Fresco;
+import com.facebook.drawee.interfaces.DraweeController;
 import com.google.gson.reflect.TypeToken;
 import com.shuzhongchen.ecdribbbo.R;
 import com.shuzhongchen.ecdribbbo.model.Shot;
@@ -61,7 +64,12 @@ public class ShotListAdapter extends RecyclerView.Adapter {
             shotViewHolder.likeCount.setText(String.valueOf(shot.likes_count));
             shotViewHolder.bucketCount.setText(String.valueOf(shot.buckets_count));
             shotViewHolder.viewCount.setText(String.valueOf(shot.views_count));
-            shotViewHolder.image.setImageResource(R.drawable.shot_placeholder);
+
+            DraweeController controller = Fresco.newDraweeControllerBuilder()
+                    .setUri(Uri.parse(shot.getImageUrl()))
+                    .setAutoPlayAnimations(true)
+                    .build();
+            shotViewHolder.image.setController(controller);
 
             shotViewHolder.cover.setOnClickListener(new View.OnClickListener() {
                 @Override
