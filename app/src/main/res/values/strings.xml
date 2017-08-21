@@ -15,7 +15,10 @@
     <string name="bucket">Bucket</string>
     <string name="like">Like</string>
     <string name="share">Share</string>
+
     <string name="user_profile_picture">User profile picture</string>
+    <string name="share_shot">Share this amazing shot!</string>
+    <string name="choose_bucket">Choose bucket</string>
 
     <string name="open_drawer">open drawer</string>
     <string name="close_drawer">close drawer</string>
@@ -24,7 +27,7 @@
     <string name="new_bucket_create">Create</string>
     <string name="new_bucket_cancel">Cancel</string>
     <string name="new_bucket_name">Bucket name</string>
-    <string name="new_bucket_descripiton">Bucket description</string>
+    <string name="new_bucket_description">Bucket description</string>
 
     <string name="shot_author_picture">Shot author picture</string>
     <string name="shot_count">{0,choice,0#0 shot|1#1 shot|1&lt;{0} shots}</string>

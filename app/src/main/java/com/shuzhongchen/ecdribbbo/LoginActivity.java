@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import com.google.gson.JsonSyntaxException;
 import com.shuzhongchen.ecdribbbo.dribbble.Dribbble;
+import com.shuzhongchen.ecdribbbo.dribbble.DribbbleException;
 import com.shuzhongchen.ecdribbbo.dribbble.auth.Auth;
 import com.shuzhongchen.ecdribbbo.dribbble.auth.AuthActivity;
 
