@@ -2,6 +2,15 @@
 
 Exihibbbit is a Dribbble.com Android client, it’s an online community for designers to share, discuss their work.
 
+## Technology
+
+* Used NavigationDrawer and Toolbar to implement UI organization. 
+* Used OkHttp and WebView to implement OAuth login.
+* Invoked Dribbble API to acquire user data through HTTP.
+* Implemented infinite loading list by using mixed-typed adapter and AsyncTask.
+* Combined Activity, Fragment, Dialog, AsyncTask and Dribble API to implement like and bucket function.
+* Used Fresco to implement image loading function, ensure lazy load and loading fluency.
+
 ## Features
 
 Shots:
